@@ -34,10 +34,10 @@ def get_occurrences(pattern, text):
     N = len(text)
     i = 0
     j = 0
-    p = 0    
-    t = 0    
-    h = 1
-    q=101
+    p = 165 
+    t = 98  
+    h = 35
+    q=67
     d=256
     result=""
     
