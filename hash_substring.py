@@ -6,10 +6,8 @@ def read_input():
     text = input()
     if 'F' in text:
         with open('tests/06', 'r') as f:
-            txt=f.read()
-            split=txt.splitlines()
-            pattern = split[0]
-            text=split[1]
+            pattern = f.readline()
+            text=f.readline()
     elif 'I' in text:
        pattern = input()
        text=input()
