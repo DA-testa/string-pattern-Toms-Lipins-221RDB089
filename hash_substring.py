@@ -5,7 +5,7 @@ def read_input():
     # as before, use capital i (input from keyboard) and capital f (input from file) to choose which input type will follow
     text = input()
     if 'F' in text:
-        with open('/workspaces/string-pattern-Toms-Lipins-221RDB089/tests/06', 'r') as f:
+        with open("/workspaces/string-pattern-Toms-Lipins-221RDB089/tests/06", "r") as f:
             pattern = f.readline()
             text=f.readline()
     elif 'I' in text:
