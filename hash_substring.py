@@ -65,7 +65,7 @@ def get_occurrences(pattern, text):
                 result= result + " " 
  
     
-        if i < N-M:
+        if i < T-P:
             t = (d*(t-ord(text[i])*h) + ord(text[i + P]))% q
  
             
