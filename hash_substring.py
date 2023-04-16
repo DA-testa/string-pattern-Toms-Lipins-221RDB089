@@ -30,8 +30,8 @@ def get_occurrences(pattern, text):
 
     # and return an iterable variable
 
-    M = len(pattern) 
-    N = len(text)
+    P = len(pattern) 
+    T = len(text)
     i = 0
     j = 0
     p = 0 
@@ -41,32 +41,32 @@ def get_occurrences(pattern, text):
     d=256
     result=""
     
-    for i in range(M-1):
+    for i in range(P-1):
         h = (h * d)% q
  
    
-    for i in range(M):
+    for i in range(P):
         p = (d * p + ord(pattern[i]))% q
         t = (d * t + ord(text[i]))% q
  
     
-    for i in range(N-M + 1):
+    for i in range(T-P + 1):
        
         if p == t:
            
-            for j in range(M):
+            for j in range(P):
                 if text[i + j] != pattern[j]:
                     break
  
             j+= 1
           
-            if j == M:
+            if j == P:
                 result= result +  str(i)
                 result= result + " " 
  
     
         if i < N-M:
-            t = (d*(t-ord(text[i])*h) + ord(text[i + M]))% q
+            t = (d*(t-ord(text[i])*h) + ord(text[i + P]))% q
  
             
             if t < 0:
