@@ -75,7 +75,7 @@ def get_occurrences(pattern, text):
                 t = t + q
 
 
-    return result
+    return [result]
 
 
 # this part launches the functions
