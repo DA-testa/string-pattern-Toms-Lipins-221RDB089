@@ -44,8 +44,8 @@ def get_occurrences(pattern, text):
  
    
     for i in range(M):
-        p = (d * p + ord(pat[i]))% q
-        t = (d * t + ord(txt[i]))% q
+        p = (d * p + ord(pattern[i]))% q
+        t = (d * t + ord(text[i]))% q
  
     
     for i in range(N-M + 1):
@@ -53,7 +53,7 @@ def get_occurrences(pattern, text):
         if p == t:
            
             for j in range(M):
-                if txt[i + j] != pat[j]:
+                if text[i + j] != pattern[j]:
                     break
  
             j+= 1
@@ -63,7 +63,7 @@ def get_occurrences(pattern, text):
  
     
         if i < N-M:
-            t = (d*(t-ord(txt[i])*h) + ord(txt[i + M]))% q
+            t = (d*(t-ord(text[i])*h) + ord(text[i + M]))% q
  
             
             if t < 0:
