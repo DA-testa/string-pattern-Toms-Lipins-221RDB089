@@ -8,8 +8,8 @@ def read_input():
         with open('tests/06', 'r') as f:
             txt=f.read()
             split=txt.splitlines()
-            pattern = x[0]
-            text=x[1]
+            pattern = split[0]
+            text=split[1]
     elif 'I' in text:
        pattern = input()
        text=input()
