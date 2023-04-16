@@ -39,20 +39,20 @@ def get_occurrences(pattern, text):
     h = 1
  
     
-    for i in xrange(M-1):
+    for i in range(M-1):
         h = (h * d)% q
  
    
-    for i in xrange(M):
+    for i in range(M):
         p = (d * p + ord(pat[i]))% q
         t = (d * t + ord(txt[i]))% q
  
     
-    for i in xrange(N-M + 1):
+    for i in range(N-M + 1):
        
         if p == t:
            
-            for j in xrange(M):
+            for j in range(M):
                 if txt[i + j] != pat[j]:
                     break
  
