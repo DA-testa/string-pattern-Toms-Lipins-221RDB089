@@ -6,11 +6,11 @@ def read_input():
     text = input()
     if 'F' in text:
         with open('/workspaces/string-pattern-Toms-Lipins-221RDB089/tests/06', 'r') as f:
-            line = f.readline()
-            line2=f.readline()
+            pattern = f.readline()
+            text=f.readline()
     elif 'I' in text:
-       line = input()
-       line2=input()
+       pattern = input()
+       text=input()
     # after input type choice
     # read two lines 
     # first line is pattern 
@@ -19,7 +19,7 @@ def read_input():
     # return both lines in one return
     
     # this is the sample return, notice the rstrip function
-    return (line.rstrip(), line2.rstrip())
+    return (pattern.rstrip(), text.rstrip())
 
 def print_occurrences(output):
     # this function should control output, it doesn't need any return
