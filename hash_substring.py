@@ -25,7 +25,7 @@ def print_occurrences(output):
     # this function should control output, it doesn't need any return
     print(' '.join(map(str, output)))
 
-def get_occurrences(pattern, text, q):
+def get_occurrences(pattern, text):
     # this function should find the occurances using Rabin Karp alghoritm 
 
     # and return an iterable variable
@@ -37,6 +37,7 @@ def get_occurrences(pattern, text, q):
     p = 0    
     t = 0    
     h = 1
+    q=101
     d=256
     result=""
     
