@@ -61,8 +61,8 @@ def get_occurrences(pattern, text):
             j+= 1
           
             if j == P:
-                result= result +  str(i)
-                result= result + " " 
+                result= result +  str(i) + " "
+                
  
     
         if i < T-P:
