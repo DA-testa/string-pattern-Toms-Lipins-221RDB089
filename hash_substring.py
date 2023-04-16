@@ -37,7 +37,7 @@ def get_occurrences(pattern, text):
     p = 0    
     t = 0    
     h = 1
- 
+    result=""
     
     for i in range(M-1):
         h = (h * d)% q
@@ -59,7 +59,7 @@ def get_occurrences(pattern, text):
             j+= 1
           
             if j == M:
-                 str(i)
+                result= result +  str(i)
  
     
         if i < N-M:
@@ -70,7 +70,7 @@ def get_occurrences(pattern, text):
                 t = t + q
 
 
-    return str(i)
+    return result
 
 
 # this part launches the functions
