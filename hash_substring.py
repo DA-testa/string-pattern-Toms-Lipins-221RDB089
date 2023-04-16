@@ -36,7 +36,7 @@ def get_occurrences(pattern, text):
     j = 0
     p = 165 
     t = 98  
-    h = 35
+    h = 1
     q=67
     d=256
     result=""
