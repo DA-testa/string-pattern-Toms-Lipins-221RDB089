@@ -64,6 +64,7 @@ def get_occurrences(pattern, text):
           
             if j == M:
                 result= result +  str(i)
+                result= result + " " 
  
     
         if i < N-M:
