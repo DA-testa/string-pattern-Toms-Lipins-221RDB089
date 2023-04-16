@@ -61,7 +61,7 @@ def get_occurrences(pattern, text):
             j+= 1
           
             if j == P:
-                print [str(i)]
+                result= result + str(i) + " "
                 
  
     
@@ -73,7 +73,7 @@ def get_occurrences(pattern, text):
                 t = t + q
 
 
-    
+    return [result]
 
 
 # this part launches the functions
